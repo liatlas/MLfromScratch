@@ -4,7 +4,7 @@ import calc_lsr
 
 
 def main():
-    df = pd.read_csv("./data/iris.csv")
+    df = pd.read_csv("../test_data/iris.csv")
     x: pd.Series = pd.Series(df["Sepal.Length"])
     y: pd.Series = pd.Series(df["Sepal.Width"])
 
