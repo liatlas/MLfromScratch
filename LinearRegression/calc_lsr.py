@@ -17,7 +17,9 @@ class LeastSquaresRegression:
         self._beta0 = self._calc_beta0()
 
     def _calc_means(self) -> tuple[np.float64, np.float64]:
-        return (np.mean(self.x), np.mean(self.y))
+        mean_x: np.float64 = np.mean(self.x, dtype=np.float64)
+        mean_y: np.float64 = np.mean(self.y, dtype=np.float64)
+        return (mean_x, mean_y)
 
     def _calc_variance(self) -> np.float64:
         """

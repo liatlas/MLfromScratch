@@ -1,7 +1,7 @@
 [project]
 name = "mlfromscratch"
 version = "0.1.0"
-description = "Add your description here"
+description = "Implenting some of the machine learning models that I have come across from scratch"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
