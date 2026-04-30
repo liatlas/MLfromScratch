@@ -11,15 +11,15 @@ The purpose of this exercise is to learn 3 things
 
 ## Models
 - [x] Simple Linear Regression
-- [] Multiple Linear Regression
-- [] KNN
-- [] Logistic Regression
-- [] Naive Bayes Classifier
-- [] Classification Tree
-- [] Bag Tree
-- [] Boost Tree
-- [] AdaBoost Tree
-- [] Random Forest
-- [] Support Vector Machine
-- [] PCA
-- [] K-Means Cluster
+- [ ] Multiple Linear Regression
+- [ ] KNN
+- [ ] Logistic Regression
+- [ ] Naive Bayes Classifier
+- [ ] Classification Tree
+- [ ] Bag Tree
+- [ ] Boost Tree
+- [ ] AdaBoost Tree
+- [ ] Random Forest
+- [ ] Support Vector Machine
+- [ ] PCA
+- [ ] K-Means Cluster
