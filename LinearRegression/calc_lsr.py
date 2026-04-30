@@ -1,5 +1,8 @@
+from typing import Any
+
 import numpy as np
 import pandas as pd
+from numpy._core import floating
 
 
 class LeastSquaresRegression:
@@ -8,6 +11,7 @@ class LeastSquaresRegression:
         self.y = y
         self.n = self.x.shape[0]
 
+    def fit(self):
         self._x_bar, self._y_bar = self._calc_means()
 
         self._var = self._calc_variance()
@@ -16,9 +20,9 @@ class LeastSquaresRegression:
         self._beta1 = self._calc_beta1()
         self._beta0 = self._calc_beta0()
 
-    def _calc_means(self) -> tuple[np.float64, np.float64]:
-        mean_x: np.float64 = np.mean(self.x, dtype=np.float64)
-        mean_y: np.float64 = np.mean(self.y, dtype=np.float64)
+    def _calc_means(self) -> tuple[np.floating[Any], np.floating[Any]]:
+        mean_x: floating[Any] = np.mean(self.x)
+        mean_y: floating[Any] = np.mean(self.y)
         return (mean_x, mean_y)
 
     def _calc_variance(self) -> np.float64:
