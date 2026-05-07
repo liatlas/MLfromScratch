@@ -7,7 +7,7 @@ The purpose of this exercise is to learn 3 things
 
 ### What I am not trying to do
 * Write optimal code  
-* Create models for personal use
+* Create models to use for real machine learning applications
 
 ## Models
 - [x] Simple Linear Regression
@@ -23,3 +23,10 @@ The purpose of this exercise is to learn 3 things
 - [ ] Support Vector Machine
 - [ ] PCA
 - [ ] K-Means Cluster
+
+## Each Model
+For each model, there will be 
+- a {model}.py file that contains the full implementation
+- a markdown file that explains the mechanics of the model and goes through the implementation
+- a main.py file that trains the model and returns its output 
+- a testing file

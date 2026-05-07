@@ -5,7 +5,7 @@ import pandas as pd
 from numpy._core import floating
 
 
-class LeastSquaresRegression:
+class LinearRegression:
     def __init__(self, x: pd.Series, y: pd.Series):
         self.x = x
         self.y = y
@@ -53,7 +53,7 @@ class LeastSquaresRegression:
     def _calc_beta1(self) -> np.float64:
         return self._cov / self._var
 
-    def _calc_beta0(self) -> np.float64:
+    def _calc_beta0(self) -> np.floating[Any]:
         return self._y_bar - (self._beta1 * self._x_bar)
 
     def get_output(self):
